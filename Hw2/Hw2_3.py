@@ -8,3 +8,10 @@ k = 1
 while k <= n:
     print(k)
     k = k * 2
+
+#     n = int(input())
+# pow_two = 1
+
+# while pow_two <= n:
+#     print(pow_two, end=" ")
+#     pow_two *= 2

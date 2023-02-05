@@ -16,3 +16,20 @@ if count < num/2:
     print(count)
 else:
     print(num-count)
+
+    # -------------------- 2 вариант
+
+    n = int(input())
+count_one = count_zero = 0
+
+for i in range(n):
+    coin = int(input())
+    if coin:
+        count_one += 1
+    else:
+        count_zero += 1
+
+if count_one > count_zero:
+    print(count_zero)
+else:
+    print(count_one)
