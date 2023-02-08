@@ -4,8 +4,13 @@
 # строках записаны N целых чисел Ai. Последняя строка содержит число X
 
 
-n = int(input("Введите размер списка: "))
-array = list(range(1, n+1))
-print(array)
-x = int(input("Введите число Х: "))
-print(array.count(x))
+# n = int(input("Введите размер списка: "))
+# array = list(range(1, n+1))
+# print(array)
+# x = int(input("Введите число Х: "))
+# print(array.count(x))
+
+# -------------------- 2 вариант
+
+list_nums = [int(input()) for _ in range(int(input()))]
+print(list_nums.count(int(input())))
