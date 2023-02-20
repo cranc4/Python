@@ -13,3 +13,15 @@ def degree(a, b):
 a = int(input("Введите число: "))
 b = int(input("Введите его степень: "))
 print("Результат возведения в степень равен:", degree(a, b))
+
+# -------------------- 2 вариант
+
+def pow_num(a, b):
+    if b == 0:
+        return 1
+    if b < 0:
+        return pow_num(a, b + 1) * 1 / a
+    return pow_num(a, b - 1) * a
+
+
+print(pow_num(int(input()), int(input())))

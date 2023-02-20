@@ -8,6 +8,6 @@ def sum(a, b):
         return a
     return sum(a + 1, b - 1)
 
-a = int(input("Введите число a:"))
+a = int(input("Введите число a: "))
 b = int(input("Введите число b: "))
 print("Сумма чисел равна:", sum(a, b))
