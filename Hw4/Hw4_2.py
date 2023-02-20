@@ -12,3 +12,18 @@ list = [randint(1, 5) for _ in range(int(input()))]
 print(list)
 max = max([sum([list[i - 1], list[i], list[0]]) if i == (len(list) - 1) else sum([list[i - 1], list[i], list[i + 1]]) for i in range(len(list))])
 print(f'Максимальное число ягод: {max}')
+
+# -------------------- 2 вариант
+# 4 1 2 3
+# 4 2 1 3
+
+n = int(input())
+bushes = [int(i) for i in input().split()]
+bush_max = 0
+
+for i in range(-1, n - 1):
+    bush_sum = bushes[i - 1] + bushes[i] + bushes[i + 1]
+    if bush_sum > bush_max:
+            bush_max = bush_sum
+
+print(bush_max)
