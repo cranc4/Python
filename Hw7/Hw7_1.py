@@ -30,3 +30,14 @@ def rhyme(song, letters):
 song = [r.split('-') for r in input().split()]
 letters = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я']
 print(rhyme(song, letters))
+
+# -------------------- 2 вариант
+
+alp = "аеёиоуыэюя"
+word_sug = input().split()
+vowel_letters = [sum([True for j in word if j.lower() in alp]) for word in word_sug]
+
+if all(vowel_letters) and len(set(vowel_letters)) == 1:
+    print("Парам пам-пам")
+else:
+    print("Пам парам")
